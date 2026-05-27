@@ -1,8 +1,10 @@
 /* Pattern 3
+
 1
 12
 123
 1234
+
 */
 
 #include<bits/stdc++.h>
