@@ -1,3 +1,5 @@
+//Count even numbers in an array
+
 #include<bits/stdc++.h>
 using namespace std;
 void ary() {
@@ -16,3 +18,19 @@ int main() {
     ary();
     return 0;
 }
+
+/*
+count = 0
+↓
+Loop through array
+    ↓
+    Take input
+    ↓
+    Check even
+    ↓
+    count++
+↓
+After loop
+↓
+Print count
+*/
