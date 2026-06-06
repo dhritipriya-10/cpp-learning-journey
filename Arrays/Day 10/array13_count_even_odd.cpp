@@ -16,7 +16,7 @@ void counEvenOdd() {
         if(arr[i] % 2 == 0) {
             even++;
         }
-        else if(arr[i] % 2 != 0) {
+        else if(arr[i] % 2 != 0) { //Can simply be written as else { odd++ }
             odd++;
         }
     }
