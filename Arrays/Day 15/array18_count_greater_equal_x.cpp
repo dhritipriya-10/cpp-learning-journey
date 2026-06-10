@@ -1,8 +1,8 @@
-//Day 14: Count elements equal to X
+//Count greater than or equals to X
 
 #include<bits/stdc++.h>
 using namespace std;
-void countX() {
+void greatEqX() {
     int n;
     cin >> n;
     int arr[n];
@@ -10,19 +10,19 @@ void countX() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int X;
-    cout << "Enter the value of X: ";
-    cin >> X;
     int count = 0;
+    int X;
+    cout<<"Enter the value of X: ";
+    cin >> X;
     for(int i = 0; i < n; i++) {
-        if(arr[i] == X) {
+        if(arr[i] >= X) {
             count++;
         }
     }
-    cout << "Count: " << count << endl;
+    cout << "Count = " << count << endl;
 }
 int main() {
     cout << "Enter the value of n: ";
-    countX();
+    greatEqX();
     return 0;
 }
