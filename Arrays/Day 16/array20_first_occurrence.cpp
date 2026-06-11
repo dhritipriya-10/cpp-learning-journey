@@ -1,8 +1,8 @@
-//Count elements greater than or equals to X
+//Find first occurrence of target element
 
 #include<bits/stdc++.h>
 using namespace std;
-void greatEqX() {
+void firstOcc() {
     int n;
     cin >> n;
     int arr[n];
@@ -10,19 +10,18 @@ void greatEqX() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int count = 0;
-    int X;
-    cout<<"Enter the value of X: ";
-    cin >> X;
+    int target;
+    cout<<"Enter the target value: ";
+    cin >> target;
     for(int i = 0; i < n; i++) {
-        if(arr[i] >= X) {
-            count++;
+        if(arr[i] == target) {
+            cout << i;
+            break;
         }
     }
-    cout << "Count = " << count << endl;
 }
 int main() {
     cout << "Enter the value of n: ";
-    greatEqX();
+    firstOcc();
     return 0;
 }

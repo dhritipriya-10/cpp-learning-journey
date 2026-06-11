@@ -1,9 +1,9 @@
-//Count elements greater than or equals to X
+//Day 16: Count elements not equal to X
 
 #include<bits/stdc++.h>
 using namespace std;
-void greatEqX() {
-    int n;
+void notEqX() {
+    int n; 
     cin >> n;
     int arr[n];
     cout << "Enter the elements in the array: ";
@@ -12,17 +12,17 @@ void greatEqX() {
     }
     int count = 0;
     int X;
-    cout<<"Enter the value of X: ";
+    cout << "Enter the value of X: ";
     cin >> X;
     for(int i = 0; i < n; i++) {
-        if(arr[i] >= X) {
+        if(arr[i] != X) {
             count++;
         }
     }
-    cout << "Count = " << count << endl;
+    cout << "Count: " << count << endl;
 }
 int main() {
     cout << "Enter the value of n: ";
-    greatEqX();
+    notEqX();
     return 0;
 }
