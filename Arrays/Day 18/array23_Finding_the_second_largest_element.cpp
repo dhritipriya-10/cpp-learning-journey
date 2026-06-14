@@ -1,3 +1,5 @@
+//Find the second largest element.
+
 #include<bits/stdc++.h>
 using namespace std;
 void findSecondLargest() {
@@ -14,7 +16,7 @@ void findSecondLargest() {
             largest = arr[i]; 
         }
     }
-    int secondLargest = INT_MIN;
+    int secondLargest = INT_MIN; //INT_MIN represents the smallest possible INT value.
     for(int i = 0; i < n; i++) {
         if(arr[i] != largest && arr[i] > secondLargest) {
             secondLargest = arr[i];
