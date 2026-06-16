@@ -1,3 +1,5 @@
+//Check if two arrays are equal.
+
 #include<bits/stdc++.h>
 using namespace std;
 void arreq() {
