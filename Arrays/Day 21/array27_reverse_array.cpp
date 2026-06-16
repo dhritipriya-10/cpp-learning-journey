@@ -1,4 +1,4 @@
-//Reverse the array elements.
+//Reverse the elements in an array.
 
 #include<bits/stdc++.h>
 using namespace std;
