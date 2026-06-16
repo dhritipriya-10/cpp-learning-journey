@@ -1,6 +1,6 @@
 //Maximum difference
 
-/*
+//Using 2 loops
 #include<bits/stdc++.h>
 using namespace std;
 void maxdiff() {
@@ -31,7 +31,11 @@ int main() {
     maxdiff();
     return 0;
 }
-*/
+
+//OR
+
+
+//The same problem by using one loop.
 #include<bits/stdc++.h>
 using namespace std;
 void maxdiff() {
@@ -48,7 +52,7 @@ void maxdiff() {
         if(arr[i] > largest) {
             largest = arr[i];
         }
-        if(arr[i] < smallest) {
+        if(arr[i] < smallest) {  //Used 'else if' earlier but works better without 'else' cuz a no. can't be both largest and smallest. Thus we use 'if' here.
             smallest = arr[i];
         }
     }
