@@ -1,8 +1,8 @@
-//Print All Occurrences of an Element
+//Sum of Odd Elements
 
 #include<bits/stdc++.h>
 using namespace std;
-void cntOcc() {
+void sumOfOddEle() {
     int n;
     cin >> n;
     vector<int> arr(n);
@@ -10,18 +10,16 @@ void cntOcc() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int target;
-    cout << "Enter the element to search: ";
-    cin >> target;
-    cout << "The occurrences are at index: ";
+    int sum = 0;
     for(int i = 0; i < n; i++) {
-        if(arr[i] == target) {
-            cout << i << " ";
+        if(arr[i] % 2 != 0) {
+            sum += arr[i]; 
         }
     }
+    cout << "The sum is: " << sum << endl;
 }
 int main() {
     cout << "Enter the value of n: ";
-    cntOcc();
+    sumOfOddEle();
     return 0;
 }
